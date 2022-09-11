@@ -1,0 +1,76 @@
+* {
+  list-style-type: none;
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px;
+  height: 100vh; 
+}
+
+header {
+  display: flex;
+  align-items: center;
+  font-family: "Josefin Slab";
+  justify-content: space-between;
+  height: 10vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-bottom: 1px solid black;
+}
+
+h1 {
+  font-size: 40px;
+ }
+
+.icon {
+  max-width: 20px;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-self: flex-end;
+  overflow-x: auto;
+  gap: 32px;
+  padding-left: 2%;
+  padding-right: 2%;
+ }
+   
+.container {
+  max-height: 89vh;
+}
+
+.photo {
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+.description {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+}
+
+
+@media (max-width: 481px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+}

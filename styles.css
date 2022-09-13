@@ -2,7 +2,7 @@
   list-style-type: none;
   text-decoration: none;
   color: #000;
-}
+  }
 
 a {
   transition: 0.4s;
@@ -152,35 +152,72 @@ h3:hover {
 }
 
 @media (max-width: 481px) {
+
+body {
+  margin: 0 1%;
+}
   
-  header {
-    padding: 0;
-    margin: 10px;
+main {
+  flex-direction: column;
+}
+
+hr {
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.main-header, .sub-header {
+  display: flex;
+  font-family: "Josefin Sans";
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header {
+  font-size: 10px;
+  height: 10vh;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.main-list, .sub-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.main-list {
+  gap: 0;
+}
+
+.sub-list {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.sub-header {
+  font-size: 14px;
+  font-weight: thin;
+  margin: 0;
+  padding: 0;
   }
 
-  h1 {
-    font-size: 16px;
+
+  .container {
+    padding: 0%;
   }
 
-  ul {
-    font-size: 8px;
-    gap: 16px;
-  }
+h1 {
+  font-size: 20px;
+  font-family: 'Syne', sans-serif;
+ }
 
-  .icon {
-    max-width: 15px;
-  }
-
-  .content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-  }
-
-  .photo {
-    max-height: 100vh;
-    max-width: 100vw;
-  }
+.content-left, .content-right, .content-block, .content-block-left {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 100%;
+ }
 
   }
